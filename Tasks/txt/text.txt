@@ -1,0 +1,15 @@
+Activity 5
+
+1. Implement the wrapper class to view the text file. A file name must be passed to the class constructor. It should be possible to line-by-line view the contents of a file with a for loop.
+
+2. Implement a program that searches for files with the specified set of parameters in the specified directory and its subdirectories. To create a search filter, use the "Chain of Chains" template.
+As search parameters, use the file name, extension, the range of file sizes, the range of file modification dates.
+Type search parameters and restrictions from the console.
+It should look like this:
+> Search by file name? (0 \ 1)
+0
+> Search by file extension? (0 \ 1)
+1
+> Enter extension
+Gif
+…… and so on …….

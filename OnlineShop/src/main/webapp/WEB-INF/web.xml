@@ -1,0 +1,47 @@
+<web-app version="2.4"
+         xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+
+    <session-config>
+    <session-timeout>
+        30
+    </session-timeout>
+    </session-config>
+
+    <context-param>
+        <param-name>type</param-name>
+        <param-value>session</param-value>
+    </context-param>
+
+
+    <context-param>
+        <param-name>registrationTime</param-name>
+        <param-value>60</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>imagePath</param-name>
+        <param-value>src/main/webapp/images/avatars/</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>productImagePath</param-name>
+        <!--<param-value>src/main/webapp/images/products/</param-value>-->
+        <param-value>images/products/</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>locales</param-name>
+        <param-value>en_US, ru</param-value>
+    </context-param>
+
+    <jsp-config>
+        <taglib>
+            <taglib-uri>poliakov.epam.com</taglib-uri>
+            <taglib-location>/WEB-INF/tag.tld</taglib-location>
+        </taglib>
+    </jsp-config>
+
+</web-app>
+
